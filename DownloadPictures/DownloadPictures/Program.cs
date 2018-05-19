@@ -32,7 +32,11 @@ namespace DownloadPictures
                 }
                 Console.WriteLine("正在搜索漫画...");
                 int lenList = ComicsHelp.GetComicsInfo(name);
-
+                if (lenList<=0)
+                {
+                    Console.WriteLine("很抱歉！没能找到漫画。");
+                    continue;
+                }
                 int index = 0;
                 string str;
                 while (true)
