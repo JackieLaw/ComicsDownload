@@ -25,6 +25,11 @@ namespace DownloadPictures
             {
                 Console.Write("请输入要搜索的动漫（可以为中文）：");//不能为空格
                 string name = Console.ReadLine();
+                if (name.Replace(" ","")=="")
+                {
+                    Console.WriteLine("输入不能为空或空格");
+                    continue;
+                }
                 Console.WriteLine("正在搜索漫画...");
                 int lenList = ComicsHelp.GetComicsInfo(name);
 
@@ -42,12 +47,14 @@ namespace DownloadPictures
                     //验证
                     if (!int.TryParse(str, out index))
                     {
+                        Console.WriteLine("无效索引！");
                         continue;
                     }
 
 
                     if (index < 0 || index >= lenList)
                     {
+                        Console.WriteLine("索引为负或索引太大");
                         continue;
                     }
                     break;
@@ -70,12 +77,12 @@ namespace DownloadPictures
                 }
                 if (j >= 5)
                 {
-                    Console.WriteLine("抱歉！url造失败，请重新下载,或另选资源。");
+                    Console.WriteLine("抱歉！url造失败，请重新下载，或另选资源。");
                     continue;
                 }
                 else
                 {
-                    Console.Write("url构造成功，按任意键开始下载（输入#返回起始位置）：");
+                    Console.Write("url构造成功，输入任意键开始下载（输入#返回起始位置）：");
                     if (Console.ReadLine() == "#")
                     {
                         continue;
