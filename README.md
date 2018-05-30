@@ -1,6 +1,5 @@
 # ComicsDownload
 搜索并下载（爬取）漫画  
-From http://www.mh160.com/  
   
   
 下载失败的原因  
