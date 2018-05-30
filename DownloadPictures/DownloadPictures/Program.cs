@@ -14,7 +14,6 @@ namespace DownloadPictures
         static void Main(string[] args)
         {
 
-            //WebHelp.Set();
             //下载失败的原因
             //1.url解析错误
             //2.网站缺少资源获取或者资源有问题（用浏览器打开也无法加载图片）
@@ -23,7 +22,7 @@ namespace DownloadPictures
             //False 并不一定是应为图片下载失败，也会在本章只有24张图，尝试下载第25张时出现
             while (true)
             {
-                Console.Write("请输入要搜索的动漫（可以为中文）：");//不能为空格
+                Console.Write("请输入要搜索的动漫：");//不能为空格
                 string name = Console.ReadLine();
                 if (name.Replace(" ","")=="")
                 {
@@ -74,7 +73,7 @@ namespace DownloadPictures
                 int num = lenChapter >= 5 ? 5 : lenChapter;
                 for (j = 0; j < num; j++)
                 {
-                    if (!(ComicsHelp.CheckUrl(j) == "/1/"))
+                    if (!(ComicsHelp.CheckUrl(lenChapter-1- j) == "/1/"))
                     {
                         break;
                     }

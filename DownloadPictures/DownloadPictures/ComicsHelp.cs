@@ -109,8 +109,8 @@ namespace DownloadPictures
             int num1 = 0;
             int num2 = 0;
             foreach (Match item in nameMc)
-            {
-                nameArr1[num1] = item.Groups[1].Value;
+            {                                         //可能还有其他的字符需要替换下
+                nameArr1[num1] = item.Groups[1].Value.Replace('，','-').Replace('！','-');
                 num1++;
             }
             foreach (Match item in urlMc)
@@ -225,6 +225,8 @@ namespace DownloadPictures
                 {//注意了
                     url = url.Replace("/" + check[i - 1] + "/", "/" + check[i] + "/");
                     num++;
+                    //Console.WriteLine(url);
+                    //Console.WriteLine(HttpUtility.UrlDecode(url));
                     if (WebHelp.DownLoadImage(url, "check.jpg"))
                     {
                         break;

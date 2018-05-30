@@ -4,3 +4,9 @@ C:\Users\zhen\Desktop\github\Picture\DownloadPictures\DownloadPictures\bin\Debug
 C:\Users\zhen\Desktop\github\Picture\DownloadPictures\DownloadPictures\obj\Debug\DownloadPictures.csproj.CoreCompileInputs.cache
 C:\Users\zhen\Desktop\github\Picture\DownloadPictures\DownloadPictures\obj\Debug\DownloadPictures.exe
 C:\Users\zhen\Desktop\github\Picture\DownloadPictures\DownloadPictures\obj\Debug\DownloadPictures.pdb
+C:\Users\zhen\Desktop\github\Picture\2\ComicsDownload\DownloadPictures\DownloadPictures\bin\Debug\DownloadPictures.exe.config
+C:\Users\zhen\Desktop\github\Picture\2\ComicsDownload\DownloadPictures\DownloadPictures\bin\Debug\DownloadPictures.exe
+C:\Users\zhen\Desktop\github\Picture\2\ComicsDownload\DownloadPictures\DownloadPictures\bin\Debug\DownloadPictures.pdb
+C:\Users\zhen\Desktop\github\Picture\2\ComicsDownload\DownloadPictures\DownloadPictures\obj\Debug\DownloadPictures.csproj.CoreCompileInputs.cache
+C:\Users\zhen\Desktop\github\Picture\2\ComicsDownload\DownloadPictures\DownloadPictures\obj\Debug\DownloadPictures.exe
+C:\Users\zhen\Desktop\github\Picture\2\ComicsDownload\DownloadPictures\DownloadPictures\obj\Debug\DownloadPictures.pdb

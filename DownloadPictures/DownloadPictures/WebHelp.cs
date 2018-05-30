@@ -23,9 +23,10 @@ namespace DownloadPictures
         /// </summary>
         public static void Set()
         {
-            client.Encoding = Encoding.GetEncoding("gb2312");
-            client.Headers.Add("User-Agent: Other");
+            // client.Encoding = Encoding.GetEncoding("gb2312");
+            // client.Headers.Add("User-Agent: Other");
             //client.Headers.Add("Cache-Control", "no-cache");
+           // client.Headers.Add("Referer", "http://www.mh160.com/kanmanhua");
         }
         /// <summary>
         /// 下载网页
@@ -46,7 +47,8 @@ namespace DownloadPictures
             //client.DownloadFile(url, fileName);
             // return true;
             try
-            {
+            {   //很重要
+                client.Headers.Add("Referer", "http://www.mh160.com/kanmanhua");
                 client.DownloadFile(url, fileName);
                 return true;
             }
@@ -54,6 +56,7 @@ namespace DownloadPictures
             {//验证一次
                 try
                 {
+                    client.Headers.Add("Referer", "http://www.mh160.com/kanmanhua");
                     client.DownloadFile(url, fileName);
                     return true;
                 }
